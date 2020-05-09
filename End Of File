@@ -1,0 +1,28 @@
+//Java End-of-file. "In computing, End Of File (commonly abbreviated EOF) is a condition in a computer operating system where no more data can
+be read from a data source." — (Wikipedia: End-of-file)//
+//Hint: Java's Scanner.hasNext() method is helpful for this problem.//
+
+//The hasNextLine() is a method of Java Scanner class which is used to check if there is another line in the input of this scanner.//
+//It returns true if it finds another line, otherwise returns false.//
+
+//Using While Loop//
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+        int i = 1;
+        while(scan.hasNextLine()){
+            String str = scan.nextLine();
+            
+            System.out.println(i + " " + str);
+            i++;
+        }
+    }
+}
